@@ -7,17 +7,10 @@
 	background-color: red;
 }
 
-.confetti:nth-child(n + 1){
-	background-color: green;
-}
-
-.confetti:nth-child(n + 2){
-	background-color: blue;
-}
-
-.confetti:nth-child(n + 3){
-	background-color: yellow;
-}
+.confetti:nth-child(4n + 1) { background: red; }
+.confetti:nth-child(4n + 2) { background: green; }
+.confetti:nth-child(4n + 3) { background: blue; }
+.confetti:nth-child(4n + 4) { background: yellow; }
 
 @keyframes fall {
     from {
