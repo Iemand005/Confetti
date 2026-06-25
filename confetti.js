@@ -16,10 +16,8 @@ class Confetti {
 			p.style.left = `${x}px`;
 			p.style.top = `${y}px`;
 			
-			// Calculate horizontal distance
 			const vx = Math.cos(angle) * speed;
-			// Calculate vertical motion: initial upward velocity + gravity fall (9.8 * 5²/2)
-			const vy = -Math.sin(angle) * speed + 9.8 * 500 * 5; // gravity acceleration
+			const vy = -Math.sin(angle) * speed + 9.8 * 500 * 5;
 			
 			p.style.setProperty("--vx", `${vx}px`);
 			p.style.setProperty("--vy", `${vy}px`);
@@ -29,3 +27,5 @@ class Confetti {
 }
 
 const confetti = new Confetti();
+
+confetti.kaboom(10, 10)
