@@ -3,7 +3,7 @@
 	top: -20px;
 	width: 10px;
 	height: 10px;
-	animation: 10s fall linear forwards;
+	animation: 5s fall ease-out forwards;
 	background-color: red;
 }
 
