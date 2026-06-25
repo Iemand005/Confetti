@@ -1,0 +1,16 @@
+.confetti {
+	position: fixed;
+	top: -20px;
+	width: 10px;
+	height: 10px;
+	animation: fall linear forwards;
+}
+
+@keyframes fall {
+	from {
+		transform: translateY(0) rotate(0deg);
+	}
+	to {
+		transform: translateY(110vh) rotate(720deg);
+	}
+}

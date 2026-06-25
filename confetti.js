@@ -1,2 +1,4 @@
 
-function Confetti()
+class Confetti {
+	
+}
