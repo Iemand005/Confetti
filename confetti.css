@@ -22,41 +22,17 @@
 @keyframes fall {
 	from {
 		transform:
-			translate(0, 0)
+			translateY(0)
 			rotateX(0deg)
 			rotateY(0deg)
 			rotateZ(0deg);
-	}no
-
-	25% {
-		transform:
-			translate(20px, 25vh)
-			rotateX(360deg)
-			rotateY(180deg)
-			rotateZ(90deg);
-	}
-
-	50% {
-		transform:
-			translate(-20px, 50vh)
-			rotateX(720deg)
-			rotateY(360deg)
-			rotateZ(180deg);
-	}
-
-	75% {
-		transform:
-			translate(15px, 75vh)
-			rotateX(1080deg)
-			rotateY(540deg)
-			rotateZ(270deg);
 	}
 
 	to {
 		transform:
-			translate(-10px, 110vh)
+			translateY(110vh)
 			rotateX(1440deg)
-			rotateY(720deg)
-			rotateZ(360deg);
+			rotateY(1080deg)
+			rotateZ(720deg);
 	}
 }
