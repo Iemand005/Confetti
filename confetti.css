@@ -3,14 +3,24 @@
 	top: -20px;
 	width: 10px;
 	height: 10px;
-	animation: fall linear forwards;
+	animation: 10s fall linear forwards;
+	background-color: red;
 }
 
 @keyframes fall {
 	from {
-		transform: translateY(0) rotate(0deg);
+		transform:
+			translateY(0)
+			rotateX(0deg)
+			rotateY(0deg)
+			rotateZ(0deg);
 	}
+
 	to {
-		transform: translateY(110vh) rotate(720deg);
+		transform:
+			translateY(110vh)
+			rotateX(1440deg)
+			rotateY(1080deg)
+			rotateZ(720deg);
 	}
 }
