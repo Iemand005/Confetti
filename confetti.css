@@ -20,19 +20,30 @@
 }
 
 @keyframes fall {
-	from {
-		transform:
-			translateY(0)
-			rotateX(0deg)
-			rotateY(0deg)
-			rotateZ(0deg);
-	}
+    from {
+        transform:
+            translate(0, 0)
+            rotateX(0deg)
+            rotateY(0deg);
+    }
 
-	to {
-		transform:
-			translateY(110vh)
-			rotateX(1440deg)
-			rotateY(1080deg)
-			rotateZ(720deg);
-	}
+    30% {
+        transform:
+            translate(
+                calc(var(--vx) * 0.3),
+                calc(var(--vy) * 0.3)
+            )
+            rotateX(720deg)
+            rotateY(540deg);
+    }
+
+    to {
+        transform:
+            translate(
+                var(--vx),
+                calc(var(--vy) + 500px)
+            )
+            rotateX(1800deg)
+            rotateY(1440deg);
+    }
 }
