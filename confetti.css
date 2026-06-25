@@ -7,15 +7,15 @@
 	background-color: red;
 }
 
-.confetti:nth-child(1){
+.confetti:nth-child(n + 1){
 	background-color: green;
 }
 
-.confetti:nth-child(2){
+.confetti:nth-child(n + 2){
 	background-color: blue;
 }
 
-.confetti:nth-child(3){
+.confetti:nth-child(n + 3){
 	background-color: yellow;
 }
 
