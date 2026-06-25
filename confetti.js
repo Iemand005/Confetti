@@ -6,3 +6,5 @@ class Confetti {
 		particle.className = "confetti";
 	}
 }
+
+const confetti = new Confetti();
