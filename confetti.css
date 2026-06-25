@@ -1,8 +1,8 @@
 .confetti {
 	position: fixed;
 	top: -20px;
-	width: 10px;
-	height: 10px;
+	width: 8px;
+	height: 16px;
 	animation: 5s fall ease-out forwards;
 	background-color: red;
 }
