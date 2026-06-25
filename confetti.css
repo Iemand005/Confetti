@@ -3,10 +3,9 @@
 	top: -20px;
 	width: 8px;
 	height: 16px;
-	animation: 5s fall linear forwards;
+	animation: 5s fall cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
 	background-color: red;
 }
-
 .confetti:nth-child(4n + 1) { background: red; }
 .confetti:nth-child(4n + 2) { background: green; }
 .confetti:nth-child(4n + 3) { background: blue; }
@@ -19,23 +18,9 @@
             rotateX(0deg)
             rotateY(0deg);
     }
-
-    30% {
-        transform:
-            translate(
-                calc(var(--vx) * 0.3),
-                calc(var(--vy) * 0.3)
-            )
-            rotateX(720deg)
-            rotateY(540deg);
-    }
-
     to {
         transform:
-            translate(
-                var(--vx),
-                calc(var(--vy) + 500px)
-            )
+            translate(var(--vx), var(--vy))
             rotateX(1800deg)
             rotateY(1440deg);
     }
